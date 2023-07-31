@@ -39,7 +39,7 @@ export default function AddCard() {
 
       newCardsList.push({
         ...state,
-        id: uuid()
+        id: uuid
       })
       updateLocalStorageCards(newCardsList)
       navigate("/")

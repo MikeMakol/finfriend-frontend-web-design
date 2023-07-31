@@ -26,7 +26,7 @@ export default function Navbar() {
                 className="d-inline-block align-top site-logo"
                 alt=""
               />
-              Credit Card Payment System
+              FinFriend
             </span>
           </li>
           <li className="nav-item">

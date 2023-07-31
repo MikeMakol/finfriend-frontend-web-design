@@ -5,7 +5,7 @@ export class CreditCardAPI {
       {
         id: "ff646567-484e-4eb7-961f-977f7c728eb9",
         cardNumber: "1111111111111111",
-        cardHolder: "Hassan Saeed",
+        cardHolder: "Mike Makol",
         cardMonth: "01",
         cardYear: "2023",
         cardCvv: "1111"
@@ -30,14 +30,13 @@ export class CreditCardAPI {
     }
 
     return creditCardsList
-    //TODO:integrate API module when got API from backend team :)
-    /*
-    private readonly api = new Api();//it will have all Restful verbs functions
-    return axios.get(`ENDPOINT_GOES_HERE`)
-    .then((res: { data: any; }) => {
-      return res.data;
-    });
-    */
+
+    // api = new Api(); //it will have all Restful verbs functions
+    // return axios.get(`http://localhost:9292`)
+    // .then((res: { data: any; }) => {
+    //   return res.data;
+    // });
+  
   }
 } //CreditCardAPI Class End
 

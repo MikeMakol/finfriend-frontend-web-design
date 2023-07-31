@@ -66,7 +66,7 @@ function Card(props) {
         <div className="card-item__cover">
           <img
             alt=""
-            src={`assets/card-background/${BACKGROUND_IMG}`}
+            src={`/card-background/${BACKGROUND_IMG}`}
             className="card-item__bg"
           />
         </div>
@@ -74,14 +74,14 @@ function Card(props) {
         <div className="card-item__wrapper">
           <div className="card-item__top">
             <img
-              src={"assets/card-asserts/chip.png"}
+              src={"/card-asserts/chip.png"}
               alt=""
               className="card-item__chip"
             />
             <div className="card-item__type">
               <img
                 alt={useCardType}
-                src={`/assets/card-type/${useCardType}.png`}
+                src={`/card-type/${useCardType}.png`}
                 className="card-item__typeImg"
               />
             </div>
