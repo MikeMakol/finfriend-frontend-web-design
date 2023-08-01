@@ -2,6 +2,25 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
+  /*const [displayusername, displayusernameupdate] = useState('');
+  const [showmenu, showmenuupdateupdate] = useState(false);
+  const usenavigate = useNavigate();
+  const location = useLocation();
+  useEffect(() => {
+      if (location.pathname === '/login' || location.pathname === '/register') {
+          showmenuupdateupdate(false);
+      } else {
+          showmenuupdateupdate(true);
+          let username = sessionStorage.getItem('username');
+          if (username === '' || username === null) {
+              usenavigate('/login');
+          } else {
+              displayusernameupdate(username);
+          }
+      }
+
+  }, [location])*/
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark text-white">
       <button
@@ -37,6 +56,27 @@ export default function Navbar() {
           <li className="nav-item">
             <NavLink to="/add-card" className="nav-link text-white">
               Add card
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/login" className="nav-link text-white">
+              Log In
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/register" className="nav-link text-white">
+              Sign Up
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/customer" className="nav-link text-white">
+              Customer
+            </NavLink>
+          </li>
+          {/* <span >Welcome <b>{displayusername}</b></span> */}
+          <li className="nav-item">
+            <NavLink to="/login" className="nav-link text-white" style={{ float: 'right' }}>
+              Logout
             </NavLink>
           </li>
         </ul>
